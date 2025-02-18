@@ -18,12 +18,12 @@ const ChatMessages = ({ friendId }) => {
   });
 
   useEffect(() => {
-    if (socketState.socket) {
+    if (socketState?.socket) {
       socketState.socket.on("receiveMessage", (data) => {
         queryClient.invalidateQueries(["messages", data.sender]);
       });
     }
-  });
+  }, [socketState?.socket, queryClient]);
 
   const end = useRef(null);
 
