@@ -6,7 +6,7 @@ import { useGetFriends } from "../features/friends/pages/useFriends";
 import LoaderSmall from "./LoaderSmall";
 import { getProfileImage } from "../utils/utils";
 
-import { ChatContext } from "../features/chat/pages/chatContext";
+import { ChatContext } from "../features/chat/pages/ChatContext";
 import ChatMessages from "./ChatMessages";
 
 import { setChatActive } from "../features/chat/pages/chatActions";

@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useGetFriends } from "../features/friends/pages/useFriends";
 import ChatFriend from "./ChatFriend";
 import LoaderSmall from "./LoaderSmall";
-import { ChatContext } from "../features/chat/pages/chatContext";
+import { ChatContext } from "../features/chat/pages/ChatContext";
 
 const ChatList = () => {
   const { friends, isLoading } = useGetFriends();

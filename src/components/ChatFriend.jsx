@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ChatContext } from "../features/chat/pages/chatContext";
+import { ChatContext } from "../features/chat/pages/ChatContext";
 import { setChatActive } from "../features/chat/pages/chatActions";
 
 import { getProfileImage } from "../utils/utils";
