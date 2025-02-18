@@ -17,7 +17,9 @@ const ChatInterface = () => {
 
   if (isLoading) return <LoaderSmall />;
 
-  const friend = friends.find((friend) => friend.id === chatState.activeChatId);
+  const friend = friends?.find(
+    (friend) => friend.id === chatState.activeChatId
+  );
 
   return (
     <>

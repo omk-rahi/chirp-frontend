@@ -21,20 +21,20 @@ const Requests = () => {
 
       <div className="p-6">
         {isRequestLoading && <LoaderSmall />}
-        {!isRequestLoading && requests.length === 0 && (
+        {!isRequestLoading && requests?.length === 0 && (
           <h3 className="text-sm font-medium text-gray-900">
             No request found
           </h3>
         )}
 
-        {!isRequestLoading && requests.length > 0 && (
+        {!isRequestLoading && requests?.length > 0 && (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {requests.map((request) => (
               <div
                 key={request._id}
                 className="relative flex flex-col sm:flex-row items-center justify-between space-x-3 border border-gray-300 bg-white px-6 py-5 hover:border-brand-500"
               >
-                <Friend info={request.sender} />
+                <Friend info={request?.sender} />
                 <div className="flex gap-2 w-fit mt-3 md:mt-0">
                   <Button
                     variant="danger"

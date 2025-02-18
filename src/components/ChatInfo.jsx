@@ -7,7 +7,7 @@ const ChatInfo = ({ friendId }) => {
 
   if (isLoading) return <LoaderSmall />;
 
-  const friend = friends.find((friend) => friend.id === friendId);
+  const friend = friends?.find((friend) => friend.id === friendId);
 
   return (
     <div className="p-8 hidden lg:block min-w-64">

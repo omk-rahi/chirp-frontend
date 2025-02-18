@@ -27,7 +27,7 @@ const FriendList = () => {
 
         {!isLoading && friends.length > 0 && (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {friends.map((friend) => (
+            {friends?.map((friend) => (
               <div
                 key={friend.id}
                 className="relative flex flex-col sm:flex-row items-center justify-between space-x-3 border border-gray-300 bg-white px-6 py-5 hover:border-brand-500"

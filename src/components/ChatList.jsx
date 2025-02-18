@@ -14,7 +14,7 @@ const ChatList = () => {
     if (!isLoading) {
       if (query) {
         setFilteredFriends(
-          friends.filter((friend) =>
+          friends?.filter((friend) =>
             friend.fullName.toLowerCase().includes(query.toLowerCase())
           )
         );
