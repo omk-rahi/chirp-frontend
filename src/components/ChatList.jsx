@@ -46,20 +46,20 @@ const ChatList = () => {
           </h3>
         )}
 
-        {!isLoading && filteredFriends.length > 0 && (
+        {!isLoading && filteredFriends?.length > 0 && (
           <>
             <span className="px-4 text-sm text-gray-500 font-medium block pb-2">
               Recent chats
             </span>
             <div className="space-y-2">
-              {filteredFriends.map((friend) => (
+              {filteredFriends?.map((friend) => (
                 <ChatFriend key={friend.id} info={friend} />
               ))}
             </div>
           </>
         )}
 
-        {!isLoading && filteredFriends.length === 0 && query && (
+        {!isLoading && filteredFriends?.length === 0 && query && (
           <h3 className="text-sm font-medium text-gray-900 mx-4">
             No friends found
           </h3>
