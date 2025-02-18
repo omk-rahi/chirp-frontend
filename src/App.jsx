@@ -9,16 +9,16 @@ import AuthLayout from "./components/AuthLayout";
 import AppLayout from "./components/AppLayout";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 
-const Login = lazy(import("./features/auth/pages/Login"));
-const Register = lazy(import("./features/auth/pages/Register"));
-const OTPVerify = lazy(import("./features/auth/pages/OTPVerify"));
+const Login = lazy(() => import("./features/auth/pages/Login"));
+const Register = lazy(() => import("./features/auth/pages/Register"));
+const OTPVerify = lazy(() => import("./features/auth/pages/OTPVerify"));
 
-const ChatDashBoard = lazy(import("./features/chat/pages/ChatDashBoard"));
-const Profile = lazy(import("./features/user/pages/Profile"));
-const FriendsOverview = lazy(
+const ChatDashBoard = lazy(() => import("./features/chat/pages/ChatDashBoard"));
+const Profile = lazy(() => import("./features/user/pages/Profile"));
+const FriendsOverview = lazy(() =>
   import("./features/friends/pages/FriendsOverview")
 );
-const Requests = lazy(import("./features/friends/pages/Requests"));
+const Requests = lazy(() => import("./features/friends/pages/Requests"));
 
 import { SocketProvider } from "./socket/SocketContext";
 import Loader from "./components/Loader";
