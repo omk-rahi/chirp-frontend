@@ -40,7 +40,7 @@ const ChatList = () => {
       </div>
       <div className="py-4">
         {isLoading && <LoaderSmall />}
-        {!isLoading && friends.length === 0 && (
+        {!isLoading && friends?.length === 0 && (
           <h3 className="text-sm font-medium text-gray-900 mx-4">
             Add new Friends to chat
           </h3>
